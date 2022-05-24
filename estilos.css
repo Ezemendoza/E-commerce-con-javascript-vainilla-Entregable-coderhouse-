@@ -19,7 +19,8 @@
  padding-left: 0% !important;
 
 }
-
+.modal-bod{  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;}
 body {
   margin: 0;
   padding: 0;
