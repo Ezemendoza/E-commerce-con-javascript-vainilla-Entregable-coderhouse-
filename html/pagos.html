@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estilosCOPIA.css">
+  <link rel="stylesheet" href="../css/galeria.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" href="/imagenes/River_Plate_logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Checkout - Tienda River</title>
+  </head>
+  <body >
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>  <a href="../index.html" class="navbar-brand pl-4" id="logo"><img src="../imagenes/River_Plate_logo.png" id="logo">
+        </a>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          
+          <ul class="navbar-nav mb-lg-0 pl-4 barraCentral ">
+            <li class="nav-item " id="palabraHeader">
+              <a class="nav-link active " aria-current="page" href="../index.html">Inicio</a>
+            </li>
+           
+              <li class="nav-item ml-4" id="palabraHeader">
+                <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                <li class="nav-item ml-4" id="palabraHeader">
+                  <a class="nav-link" href="turnos.html">Shopping</a>
+                  </li>
+                  </div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdownn">
+          <ul class="navbar-nav ">      <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-right" onclick="resultado()" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="resultado()">
+              <img src="../imagenes/carrito.png" onclick="resultado()">
+            </a>
+            <div class="dropdown-menu" id="carrito" aria-labelledby="navbarDropdownMenuLink">
+
+
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body"></div>
+                  <div class="modal-footer">
+                    <p class="mx-auto fw-bold">Total Compra : $ <span class="fw-normal cart-total" id="cart-total">0</span></p>
+                    <div class="modal-buttons">
+                
+                      <button type="button" class="btn btn-primary" onclick="resultado()" >Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        <li><a href="perfil.html"> <div class="iconoPerfil"><img src="../imagenes/iconoPerfil2.png"> </div></a></li>
+<li> <div class="ubicacion"> <input type="checkbox" id="toggle">
+  <label for="toggle" class="buttones"></label></div>
+  </li>
+          </ul>
+        </div>
+      </nav>      
+    </header>
+    <div class="row g-6 ">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-danger">Tu carrito</span>
+          <span class="badge bg-primary rounded-pill" id="carritoPago"></span>
+        </h4>
+      <div class="carritoPago">
+        
+
+        </div>
+      </div>
+      <div class="col-md-7 col-lg-8 pl-5 pr-5">
+        <h4 class="mb-5 mt-5 ">Datos de envios</h4>
+        <form class="needs-validation" validate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              
+              <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre solo puede contener letras.</p>
+              </div>
+        
+            </div>
+
+            <div class="col-sm-6">
+              
+              <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__label">Apellido</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El apellido solo puede contener letras.</p>
+              </div>
+        
+            </div>
+
+
+            <div class="col-12">
+             
+              <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                  <input type="email" class="formulario__input" name="correo" id="correo" placeholder="simulaciona@tiendariver.com">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+              </div>
+        
+            </div>
+
+            <div class="col-12">
+             
+              <div class="formulario__grupo" id="grupo__direccion">
+                <label for="direccion" class="formulario__label">Direccion</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="cochabamba 123">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La direccion solo puede contener letras y numeros.</p>
+              </div>
+        
+            </div>
+
+
+            <div class="col-md-4 mt-4">
+              <label for="Provincia" class="form-label">Provincia</label><br>
+              <select class="form-select provincia" id="country" required>
+                <option value="">Marque opcion</option>
+                <option>Buenos Aires</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor seleccione una Provincia
+              </div>
+            </div>
+
+            <div class="col-md-5 mt-2">
+                <label for="localidad" class="form-label mt-5">Localidad</label>
+                <select class="form-select localidad" id="country" required >
+                  <option value="" >Marque opcion</option>
+                  <option value="La Matanza" >La Matanza</option>
+                  <option value="Ciudad Autonoma de Buenos Aires">Ciudad Autonoma de Buenos Aires</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor seleccione una localidad
+                </div>
+              </div>
+
+            <div class="col-md-3">
+           
+              <div class="formulario__grupo " id="grupo__codigoPostal">
+                <label for="codigoPostal" class="formulario__label">Codigo Postal</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="codigoPostal" id="codigoPostal" placeholder="1745">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El Codigo Postal solo puede contener  4 letras.</p>
+              </div>
+        
+            </div>
+          </div>
+
+   
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Pago</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credito" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit" maxlenght="19">Tarjeta De Credito</label>
+            </div>
+            <div class="form-check">
+              <input id="debito" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit"  maxlenght="19">Tarjeta de Debito</label>
+            </div>
+          </div>
+
+          <div class="row gy-4">
+            <div class="col-md-6 mt-5">
+    
+              <div class="formulario__grupo" id="grupo__nombreTarjeta">
+                <label for="nombreTarjeta" class="formulario__label">Nombre que figura en la tarjeta</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="nombreTarjeta" id="nombreTarjeta" placeholder="Nelson Rivas">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre de la tarjeta es incorrecto.</p>
+              </div>
+        
+            </div>
+
+            <div class="col-md-6"> <div class="wrap">
+              <div class="tarjeta-wrap ">
+                <div class="tarjeta">
+                  <div class="adelante card-1"></div>
+                  <div class="atras card-2">
+                    <div id="mostrar"> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-md-6 mt-4" >
+             
+              <div class="formulario__grupo mt-4" id="grupo__numeroTarjeta">
+                <label for="numeroTarjeta" class="formulario__label">Numero de la Tarjeta</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="numeroTarjeta" id="numeroTarjeta" placeholder="1234 5678 9012 3456" >
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El numero de la tarjeta es incorrecto .</p>
+              </div>
+        
+            </div>
+            
+            
+
+            <div class="col-md-3 mt-4">
+           
+              <div class="formulario__grupo mt-4" id="grupo__expiracion">
+                <label for="expiracion" class="formulario__label">Expiracion</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="expiracion" id="expiracion" placeholder="08/24">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La expiracion es incorrecta.</p>
+              </div>
+        
+            </div>
+
+            <div class="col-md-3 mt-4">
+          
+              <div class="formulario__grupo mt-4" id="grupo__cvv">
+                <label for="cvv" class="formulario__label">CVV</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="cvv" id="cvv" placeholder="123">
+                  <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El codigo de seguridad es incorrecto.</p>
+              </div>
+        
+              </div>
+          
+              <div class="col-12 mt-4">
+                <label for="localidad" class="form-label">Cuotas</label>
+                <select class="form-select col-3 cuotas "  id="country" required >
+                  <option value=""  >Marque opcion</option>
+                  <option class="opcion1"value="1" ></option>
+                  <option class="opcion2" value="2"></option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor seleccione una localidad
+                </div>
+              </div>
+            
+
+          <button class="w-100 btn btn-danger btn-lg finalizar mb-4" type="submit"  onclick="validacion()"  >Finalizar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+<script src="../js/carritopago.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html> 

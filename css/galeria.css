@@ -1,0 +1,770 @@
+body {
+    background-color: #f5f5f5;
+    padding-top: 25px;
+
+  }
+  [data-tema='oscuro'] {
+    --bg-color: #3f3f3f;
+    --txt-color: #e9e5e5;
+  }
+  
+  .header-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .80rem;
+  }
+  
+  .header-navigation a {
+    font-size: .80rem;
+  }
+  
+  .header-navigation .breadcrumb {
+    margin-bottom: 0;
+    background-color: transparent;
+    padding: 0.20rem 1rem;
+  }
+  
+  .header-navigation .btn-group {
+   margin-left: auto;
+  }
+  
+  .header-navigation .btn-share {
+    position: relative;
+  }
+
+  .header-navigation .btn-share::after {
+    content: "";
+    width: 1px;
+    height: 50%;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .store-body {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  
+  .store-body .product-info {
+    width: 60%;
+    border-right: 1px solid rgba(0,0,0,.125); 
+  }
+  
+  .store-body .product-payment-details {
+    width: 40%;
+    padding: 15px 15px 0 15px;
+
+  }
+
+  .product-info .product-gallery {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+  
+  .product-gallery-featured {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 0;
+    cursor: zoom-in;
+  }
+  .shopping-cart-image{
+    width: 100%;
+    font-size: medium !important;
+  }
+
+  .product-gallery-thumbnails .thumbnails-list li {
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .thumbnails-list li img {
+    display: block;
+    width: 100%;
+  }
+  
+  .product-gallery-thumbnails .thumbnails-list li:hover::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #007bff;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .product-info .product-seller-recommended {
+    padding: 20px 20px 0 20px;
+  }
+  
+  .product-comments textarea {
+    height: 50px;
+  }
+  
+  .last-questions-list li {
+    margin-bottom: 20px;
+  }
+  
+  .last-questions-list li span {
+    padding-left: 10px;
+  }
+
+ #carrito{
+   width: 485% !important;
+
+    height: 200% !important;
+    padding-top: 0% !important;
+    margin-right: 0% !important;
+  }
+
+.modal-dialog{
+  margin-top: 0% !important;
+
+    font-family: serif;
+  
+}
+  .modal-content{
+
+margin-left: 0% !important;
+color: var(--txt-color) !important;
+    font-family: serif;
+  }
+
+.modal-body{
+padding-right: 0% !important;
+padding-left: 0% !important;
+  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;
+}
+.modal-header{
+  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;
+}
+.modal-footer{  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;}
+#logo{
+  width: 25% !important;
+}
+#navbarNavDropdown{
+  width: 50% !important;
+  justify-content: center !important;
+  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;
+  font-family: serif;
+}
+#navbarNavDropdownn{
+  width: 25% !important;
+  justify-content: flex-start !important;
+  font-family: serif;
+}
+
+.nav-link
+{  color: var(--txt-color) !important;
+font-size: larger;
+font-family: serif;}
+#navbarNavGaleria{
+  width: 100% !important;
+  justify-content: center !important;
+  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;
+  font-family: serif;
+}
+
+.totalCarrito{  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;}
+
+.editCarrito{
+  padding: 0% !important;
+  margin-top: 12% !important;
+}
+
+.sumas__carrito{
+  border: solid 1px !important;
+  padding-top: 1% !important;
+  padding-bottom: 2% !important;
+  padding-left: 5% !important;
+  padding-right: 5% !important ;
+}
+.restas{
+  border: solid 1px !important;
+  padding-top: 1% !important;
+  padding-bottom: 2% !important;
+  padding-left: 8% !important;
+  padding-right: 5% !important ;
+}
+.imagenCarrito{
+  padding-top: 750% !important;
+ 
+}
+.card{  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;}
+
+.card:hover{
+border: 1px solid black;
+}
+#palabraHeader:hover{
+border: 1px solid;
+}
+[data-tema='oscuro'] {
+  --bg-color: #3f3f3f;
+  --txt-color: #e9e5e5;
+}
+.iconoPerfil{
+  margin-top: 20% !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;
+}
+.navbar{
+  background: var(--bg-color) ;
+  color: var(--txt-color);
+  padding:0% !important;
+}
+
+#logo{
+  width: 20% !important;
+  height: 20% !important;
+ padding-left: 0% !important;
+}
+.descripcionTiendaOnline{
+  text-align:center;
+  margin-left: 13%;
+  font-size: large;
+  font-weight: 500;
+}
+.tiendaOnline{
+width: 25%;
+margin-left: 34%;
+}
+.buttones {
+  display: inline-block;
+  width: 100px;
+  height: 45px;
+  border-radius: 90px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 20% !important;
+  margin-left: 25%;
+}
+.dropdown-item:hover{
+  background-color: #ff4040!important;
+  color: white !important;
+}
+.dropdown:hover{
+  background-color: #ff4040!important;
+  color: white !important;
+}
+.dropdown{
+  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;
+  font-family: serif;
+}
+.dropdown-item{  background: var(--bg-color) !important;
+  color: var(--txt-color) !important;
+  font-family: serif;}
+.btn{background: var(--bg-color) !important;
+  color: var(--txt-color) !important;}
+.buttones::after {
+  content: url("../imagenes/sol.png");
+  width: 42px;
+  height: 42px;
+  background-color: #e03c3c;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  position: absolute;
+  top: -7px;
+  left: 0;
+  display: grid;
+  place-content: center;
+  line-height: 0;
+
+  transition: background-color 1s,
+      transform 1s ease-in;
+}
+#toggle:checked+.buttones::after {
+  content: url('../imagenes/luna.png');
+  background-color: #1f257f;
+
+
+}
+#toggle {
+  display: none;
+}
+.seccionTiendaRiver{
+width: 100%;
+}
+
+.descripcion__envio{
+  background-color: #e03c3c !important;
+  border-color:#e03c3c !important ;
+}
+.item-image-1{
+  width: 260px;
+  height: 260px;
+  content: url('../imagenes/camiseta1.png');}
+
+
+.item-image-1:hover{
+
+  content: url('../imagenes/camiseta1_1.png')
+  
+  }
+
+  .item-image-2{
+    width: 260px;
+    height: 260px;
+    content: url('../imagenes/camiseta2.png');}
+  
+  
+  .item-image-2:hover{
+    content: url('../imagenes/camiseta2_1.png');
+    
+    }
+
+
+    .item-image-3{
+      width: 260px;
+      height: 260px;
+      content: url('../imagenes/camiseta3.png');}
+    
+    
+    .item-image-3:hover{
+      content: url('../imagenes/camiseta3_1.png');
+      }
+    
+
+
+      .item-image-4{
+        width: 260px;
+        height: 260px;
+        content: url('../imagenes/camiseta4.png');}
+      
+      
+      .item-image-4:hover{
+        content: url('../imagenes/camiseta4_1.png');
+        }
+        .item-image-5{
+          width: 260px;
+          height: 260px;
+          content: url('../imagenes/camiseta5.png');}
+        
+        
+        .item-image-5:hover{
+          content: url('../imagenes/camiseta5_1.png');
+          }
+          .item-image-6{
+            width: 260px;
+            height: 260px;
+            content: url('../imagenes/camiseta6.png');}
+          
+          
+          .item-image-6:hover{
+            content: url('../imagenes/camiseta6_1.png');
+            }
+            .item-image-7{
+              width: 260px;
+              height: 260px;
+              content: url('../imagenes/camiseta7.png');}
+            
+            
+            .item-image-7:hover{
+              content: url('../imagenes/camiseta7_1.png');
+              }
+            .item-image-8{
+              width: 260px;
+              height: 260px;
+              content: url('../imagenes/camiseta8.png');}
+            
+            
+            .item-image-8:hover{
+              content: url('../imagenes/camiseta8_1.png');
+              }
+              .item-image-9{
+                width: 260px;
+                height: 260px;
+                content: url('../imagenes/camiseta9.png');}
+              
+              
+              .item-image-9:hover{
+                content: url('../imagenes/camiseta9_1.png');
+                }
+                .item-image-10{
+                  width: 260px;
+                  height: 260px;
+                  content: url('../imagenes/camiseta10.png');}
+                
+                
+                .item-image-10:hover{
+                  content: url('../imagenes/camiseta10_1.png');
+                  }
+                  .item-image-11{
+                    width: 260px;
+                    height: 260px;
+                    content: url('../imagenes/camiseta11.png');}
+                  
+                  
+                  .item-image-11:hover{
+                    content: url('../imagenes/camiseta11_1.png');
+                    }
+                    .item-image-12{
+                      width: 260px;
+                      height: 260px;
+                      content: url('../imagenes/camiseta12.png');}
+                    
+                    
+                    .item-image-12:hover{
+                      content: url('../imagenes/camiseta12_1.png');
+                      }
+                      .item-image-13{
+                        width: 260px;
+                        height: 260px;
+                        content: url('../imagenes/camiseta13.png');}
+                      
+                      
+                      .item-image-13:hover{
+                        content: url('../imagenes/camiseta13_1.png');
+                        }
+                      .item-image-14{
+                        width: 260px;
+                        height: 260px;
+                        content: url('../imagenes/camiseta14.png');}
+                      
+                      
+                      .item-image-14:hover{
+                        content: url('../imagenes/camiseta14_1.png');
+                        }
+                      .item-image-15{
+                        width: 260px;
+                        height: 260px;
+                        content: url('../imagenes/camiseta15.png');}
+                      
+                      
+                      .item-image-15:hover{
+                        content: url('../imagenes/camiseta15_1.png');
+                        }
+                        .item-image-16{
+                          width: 260px;
+                          height: 260px;
+                          content: url('../imagenes/camiseta16.png');}
+                        
+                        
+                        .item-image-16:hover{
+                          content: url('../imagenes/camiseta16_1.png');
+                          }
+
+                          .item-image-17{
+                            width: 260px;
+                            height: 260px;
+                            content: url('../imagenes/camiseta17.png');}
+                          
+                          
+                          .item-image-17:hover{
+                            content: url('../imagenes/camiseta17_1.png');
+                            }
+                            .item-image-18{
+                              width: 260px;
+                              height: 260px;
+                              content: url('../imagenes/camiseta18.png');}
+                            
+                            
+                            .item-image-18:hover{
+                              content: url('../imagenes/camiseta18_1.png');
+                              }
+                              
+                              .item-image-19{
+                                width: 260px;
+                                height: 260px;
+                                content: url('../imagenes/camiseta19.png');}
+                              
+                              
+                              .item-image-19:hover{
+                                content: url('../imagenes/camiseta19_1.png');
+                                }
+                                .item-image-21{
+                                  width: 260px;
+                                  height: 260px;
+                                  content: url('../imagenes/camiseta21.png');}
+                                
+                                
+                                .item-image-21:hover{
+                                  content: url('../imagenes/camiseta21_1.png');
+                                  }
+                                  .item-image-22{
+                                    width: 260px;
+                                    height: 260px;
+                                    content: url('../imagenes/camiseta22.png');}
+                                  
+                                  
+                                  .item-image-22:hover{
+                                    content: url('../imagenes/camiseta22_1.png');
+                                    }
+
+                                    .item-image-23{
+                                      width: 260px;
+                                      height: 260px;
+                                      content: url('../imagenes/camiseta23.png');}
+                                    
+                                    
+                                    .item-image-23:hover{
+                                    
+                                      content: url('../imagenes/camiseta23_1.png')
+                                      
+                                      }
+                                    
+                                      .item-image-24{
+                                        width: 260px;
+                                        height: 260px;
+                                        content: url('../imagenes/camiseta24.png');}
+                                      
+                                      
+                                      .item-image-24:hover{
+                                        content: url('../imagenes/camiseta24_1.png');
+                                        }
+                                    
+                                    
+                                        .item-image-25{
+                                          width: 260px;
+                                          height: 260px;
+                                          content: url('../imagenes/camiseta25.png');}
+                                        
+                                        
+                                        .item-image-25:hover{
+                                          content: url('../imagenes/camiseta25_1.png');
+                                          }
+                                        
+                                    
+                                    
+                                          .item-image-26{
+                                            width: 260px;
+                                            height: 260px;
+                                            content: url('../imagenes/camiseta26.png');}
+                                          
+                                          
+                                          .item-image-26:hover{
+                                            content: url('../imagenes/camiseta26_1.png');
+                                            }
+                                            .item-image-27{
+                                              width: 260px;
+                                              height: 260px;
+                                              content: url('../imagenes/camiseta27.png');}
+                                            
+                                            
+                                            .item-image-27:hover{
+                                              content: url('../imagenes/camiseta27_1.png');
+                                              }
+                                              .item-image-28{
+                                                width: 260px;
+                                                height: 260px;
+                                                content: url('../imagenes/camiseta28.png');}
+                                              
+                                              
+                                              .item-image-28:hover{
+                                                content: url('../imagenes/camiseta28_1.png');
+                                                }
+                                                .item-image-29{
+                                                  width: 260px;
+                                                  height: 260px;
+                                                  content: url('../imagenes/camiseta29.png');}
+                                                
+                                                
+                                                .item-image-29:hover{
+                                                  content: url('../imagenes/camiseta29_1.png');
+                                                  }
+                                                .item-image-30{
+                                                  width: 260px;
+                                                  height: 260px;
+                                                  content: url('../imagenes/camiseta30.png');}
+                                                
+                                                
+                                                .item-image-30:hover{
+                                                  content: url('../imagenes/camiseta30_1.png');
+                                                  }
+                                                  .item-image-31{
+                                                    width: 260px;
+                                                    height: 260px;
+                                                    content: url('../imagenes/camiseta31.png');}
+                                                  
+                                                  
+                                                  .item-image-31:hover{
+                                                    content: url('../imagenes/camiseta31_1.png');
+                                                    }
+                                                    .item-image-32{
+                                                      width: 260px;
+                                                      height: 260px;
+                                                      content: url('../imagenes/camiseta32.png');}
+                                                    
+                                                    
+                                                    .item-image-32:hover{
+                                                      content: url('../imagenes/camiseta32_1.png');
+                                                      }
+                                                      .item-image-33{
+                                                        width: 260px;
+                                                        height: 260px;
+                                                        content: url('../imagenes/camiseta33.png');}
+                                                      
+                                                      
+                                                      .item-image-33:hover{
+                                                        content: url('../imagenes/camiseta33_1.png');
+                                                        }
+                                                        .item-image-34{
+                                                          width: 260px;
+                                                          height: 260px;
+                                                          content: url('../imagenes/camiseta34.png');}
+                                                        
+                                                        
+                                                        .item-image-34:hover{
+                                                          content: url('../imagenes/camiseta34_1.png');
+                                                          }
+                                                          .item-image-35{
+                                                            width: 260px;
+                                                            height: 260px;
+                                                            content: url('../imagenes/camiseta35.png');}
+                                                          
+                                                          
+                                                          .item-image-35:hover{
+                                                            content: url('../imagenes/camiseta35_1.png');
+                                                            }
+                                                          .item-image-36{
+                                                            width: 260px;
+                                                            height: 260px;
+                                                            content: url('../imagenes/camiseta36.png');}
+                                                          
+                                                          
+                                                          .item-image-36:hover{
+                                                            content: url('../imagenes/camiseta36_1.png');
+                                                            }
+                                                          .item-image-37{
+                                                            width: 260px;
+                                                            height: 260px;
+                                                            content: url('../imagenes/camiseta37.png');}
+                                                          
+                                                          
+                                                          .item-image-37:hover{
+                                                            content: url('../imagenes/camiseta37_1.png');
+                                                            }
+                                                            .item-image-38{
+                                                              width: 260px;
+                                                              height: 260px;
+                                                              content: url('../imagenes/camiseta38.png');}
+                                                            
+                                                            
+                                                            .item-image-38:hover{
+                                                              content: url('../imagenes/camiseta38_1.png');
+                                                              }
+                                    
+                                                              .item-image-39{
+                                                                width: 260px;
+                                                                height: 260px;
+                                                                content: url('../imagenes/camiseta39.png');}
+                                                              
+                                                              
+                                                              .item-image-39:hover{
+                                                                content: url('../imagenes/camiseta39_1.png');
+                                                                }
+                                                                .item-image-40{
+                                                                  width: 260px;
+                                                                  height: 260px;
+                                                                  content: url('../imagenes/camiseta40.png');}
+.item-image-40:hover{
+content: url('../imagenes/camiseta40_1.png');
+ }
+.item-image-41{
+width: 260px;
+height: 260px;
+content: url('../imagenes/camiseta41.png');}
+.item-image-41:hover{
+content: url('../imagenes/camiseta41_1.png');
+ }
+                                    
+
+#centrado{
+  width: 100%;
+    display: flex !important;
+flex-direction: column !important;
+background: var(--bg-color) !important;
+color: var(--txt-color) !important;
+
+  }
+.user-img{background: var(--bg-color) !important;
+  color: var(--txt-color) !important;}
+  .precio__orden{
+    margin-top: 1000% !important;
+  }
+  .dropdown-list{
+    color: #e03c3c;
+    font-size: large;
+    font-family: serif;
+  }
+.inicio__sesion{background: var(--bg-color) !important;
+  color: var(--txt-color) !important;}
+  @media only screen and (max-width: 700px) {
+
+.product-gallery-featured{width: 130%;}
+.row{
+  margin-left: 8% !important;
+  margin-bottom: 0% !important;
+  padding-bottom: 0%; ;
+display: flex;
+flex-direction: column;
+}
+.item-title{
+  width: 800% !important;
+}
+.item-price{width: 400% !important;}
+.descripcionTiendaOnline{
+  text-align:center !important;
+ 
+  font-size: large;
+}
+.seccionTiendaRiver{
+  width: 80%;
+  }
+.nav-link{font-size: medium !important;
+margin-left: 5px !important;}
+.columnas{margin-left: 0% !important;
+width: 100% !important;
+display: flex !important;
+flex-direction: row !important;}
+#carrito{
+  width: 100% !important;
+  background: var(--bg-color) !important;
+    color: var(--txt-color) !important;
+   height: 20% !important;
+   padding-top: 0% !important;
+   margin-right: 0% !important;
+ }
+ #navbarNavDropdownn{
+   margin-right: 30% !important;
+ }
+#logo{margin-right: 0% !important;}
+.navbar{display: flex !important;
+flex-direction: row-reverse !important;}
+.dropdown:hover{
+  background-color: transparent!important;
+}
+.columna__filtro{
+margin-left: 0px !important;
+}
+.imagen__galeria{width: 150% !important;
+height: 100% !important;}
+
+  }
+  
