@@ -58,13 +58,32 @@
                     <p class="mx-auto fw-bold">Total Compra : $ <span class="fw-normal cart-total" id="cart-total">0</span></p>
                     <div class="modal-buttons">
                     
-                      <button type="button" class="btn btn-primary" >Comprar</button>
+                     <button class="btn btn-danger ml-auto comprarButton" type="button" data-toggle="modal"
+                      data-target="#comprarModal" onclick="iniciado()">Comprar</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </li>
+          <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg  modal-dialog-centered pagos">
+              <div class="modal-content modal-lg">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="comprarModalLabel">Finaliza tu compra</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body registrar">
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
         <li><a href="perfil.html"> <div class="iconoPerfil"><img src="../imagenes/iconoPerfil2.png"> </div></a></li>
 <li> <div class="ubicacion"> <input type="checkbox" id="toggle">
   <label for="toggle" class="buttones"></label></div>
