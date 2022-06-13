@@ -17,7 +17,7 @@ function comprobante(){
 
       let se= ""
      se= `<br><ul class="comprobante col-10"><li class="list-group-item d-flex justify-content-between totalCarrito">
-            <span class="col-4"><br><img src="/Proyecto Final/imagenes/qr.png"><p class="camioncito"><br>Su pedido llegara en las siguientes 72 horas habiles </p></span>
+            <span class="col-4"><br><img src="../Proyecto Final/imagenes/qr.png"><p class="camioncito"><br>Su pedido llegara en las siguientes 72 horas habiles </p></span>
             <span class="col-8 text-left comprobantes"> Hola! ${nombreDeUsuario} corrobore los datos del envio.<br> <br>
             <span class="text-left">Se le entregara el pedido realizado a ${NombreEnvio}<span class="col-8">Apellido:  ${apellidoEnvio} </span> </span> <br>
             <span>En la direccion ${direccionEnvio} y su respectivo codigo postal es ${codigoPostal}</span> 
