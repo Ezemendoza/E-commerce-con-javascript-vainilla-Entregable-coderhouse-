@@ -65,7 +65,7 @@ if(suma==2){
 contenedorTotal.forEach(element =>{
     let total= ""
     total= `<ul class="oki"><li class="list-group-item d-flex justify-content-between totalCarrito">
-     <span><img src="/Proyecto Final/imagenes/camion.png"><p class="camioncito">Su pedido llegara en las siguientes 72 horas habiles </p></span>
+     <span><img src="../Proyecto Final/imagenes/camion.png"><p class="camioncito">Su pedido llegara en las siguientes 72 horas habiles </p></span>
      <strong class="text-dark">$ ${envioPrecio} </strong></li></ul>  `
 
    creacionTotal.innerHTML=total
