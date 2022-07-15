@@ -440,32 +440,81 @@ margin-left: 2%;
 }
 
 @media only screen and (max-width: 700px) {
+  #imagen{
+    height: 200px;
+  }
   .promos{
     width: 100% !important;
+    height: 300px;
   }
   .promo{
     padding-bottom: 3%;
+    padding-left: 0%;
   }
-  .banner{
-    padding-bottom: 3%;
-    padding-top: 3%;
 
+  .banner{
+    padding-bottom: 1%;
+    padding-left: 0%;
+height: 200px;
     }
-    .banners{width: 100%;}
+    .banners{width: 100%;
+    height: 50%;
+  padding-left: 0% !important;}
   .cambios{
       border: #8a8a8a solid 0.5px;
       margin-top: 50px;
     }
     .contenedor-politicas{
   width: 100%;
-  display: grid;
-  grid-template-areas: "item-1 item-2 item-3";
-  grid-template-columns: 280px 280px 280px;
-  justify-content: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+}
 .contenedorTitulo{
 font-size: 17px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.medios_de_pago{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.devoluciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.envios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item{
+  margin-bottom: 20px;
+ }
+ .Item{
+  width: 62%;
+  top: 44%;
+}
+
+.Item2{
+
+  width: 62%;
+  top: 57.1%;
+
+}
+.item3{
+  width: 62%;
+  top: 70.4%;
+
 }
 }

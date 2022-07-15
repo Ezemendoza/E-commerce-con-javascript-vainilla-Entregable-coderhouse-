@@ -734,7 +734,7 @@ margin-left: 2%;
   margin-left: 5%;
 }
 
-@media only screen and (max-width: 700px) {.descripcionTiendaOnline{
+@media only screen and (max-width: 900px) {.descripcionTiendaOnline{
   text-align:center !important;
  
   font-size: large;
@@ -742,13 +742,27 @@ margin-left: 2%;
 }
 #logo{
   width: 30% !important;}
-.navbar{width: 100% !important;
-justify-content: flex-start !important; }
-.navbar-nav{
-  flex-direction: row !important;
-}
 
-.tiendaOnline{width: 100%;
-margin-left: 12% !important;}
+
+.tiendaOnline{
+  width: 200px;
+display: flex;
+flex-direction: row;
+justify-content: center;}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.imagen-perfil{
+  width: 0px;
+}
+.comprobante{
+  margin-right: 10%;
+padding-right: 0% !important;
+  width: 300% !important;
+}
   }
   

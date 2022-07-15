@@ -10,7 +10,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="icon" href="">
+    <link rel="icon" href="../imagenes/River_Plate_logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  
     <title>Tienda River</title>
@@ -18,78 +18,79 @@
     <body onload="mostrarProductosTodos()">
       <header>
           
-      <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
     
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <a href="../index.html" class="navbar-brand pl-4" id="logo"><img src="../imagenes/River_Plate_logo.png" id="logo">
- </a>
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
-          
-          <ul class="navbar-nav mb-lg-0 pl-4 barraCentral ">
-            <li class="nav-item " id="palabraHeader">
-              <a class="nav-link active " aria-current="page" href="../index.html">Inicio</a>
-            </li>
-           
-              <li class="nav-item ml-4" id="palabraHeader">
-                <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <a href="../index.html" class="navbar-brand pl-4" id="logo"><img src="../imagenes/River_Plate_logo.png" id="logo">
+   </a>
+          <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            
+            <ul class="navbar-nav mb-lg-0 pl-4 barraCentral ">
+              <li class="nav-item " id="palabraHeader">
+                <a class="nav-link active " aria-current="page" href="../index.html">Inicio</a>
+              </li>
+             
                 <li class="nav-item ml-4" id="palabraHeader">
-                  <a class="nav-link" href="turnos.html">Shopping</a>
-                  </li>
-                  </div>
-                  
-      
-          <ul class="navbar-nav " id="navbarNavDropdownn">   <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-right imagenCarro" onclick="resultado()" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-              <img src="../imagenes/carrito.png" class="imagenCarro">
-            </a>
-            <div class="dropdown-menu" id="carrito" aria-labelledby="navbarDropdownMenuLink">
-
-
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body"></div>
-                  <div class="modal-footer">
-                    <p class="mx-auto fw-bold">Total Compra : $ <span class="fw-normal cart-total" id="cart-total">0</span></p>
-                    <div class="modal-buttons">
-                      <button class="btn btn-danger ml-auto comprarButton" type="button" data-toggle="modal"
-                      data-target="#comprarModal" onclick="iniciado()">Comprar</button>
+                  <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                  <li class="nav-item ml-4" id="palabraHeader">
+                    <a class="nav-link" href="turnos.html">Shopping</a>
+                    </li>
+                    </div>
+                    
+        
+            <ul class="navbar-nav " id="navbarNavDropdownn"> 
+                <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-right imagenCarro" onclick="resultado()" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                <img src="../imagenes/carrito.png" class="imagenCarro">
+              </a>
+              <div class="dropdown-menu" id="carrito" aria-labelledby="navbarDropdownMenuLink">
+  
+  
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                      <p class="mx-auto fw-bold">Total Compra : $ <span class="fw-normal cart-total" id="cart-total">0</span></p>
+                      <div class="modal-buttons">
+                        <button class="btn btn-danger ml-auto comprarButton" type="button" data-toggle="modal"
+                        data-target="#comprarModal" onclick="iniciado()">Comprar</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </li>
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg  modal-dialog-centered pagos">
+                <div class="modal-content modal-lg">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="comprarModalLabel">Finaliza tu compra</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body registrar">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
             </div>
-          </li>
-          <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-lg  modal-dialog-centered pagos">
-              <div class="modal-content modal-lg">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="comprarModalLabel">Finaliza tu compra</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body registrar">
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-        <li><a href="perfil.html"> <div class="iconoPerfil"><img src="../imagenes/iconoPerfil2.png"> </div></a></li>
-<li> <div class="ubicacion"> <input type="checkbox" id="toggle">
-  <label for="toggle" class="buttones"></label></div>
-  </li>
-          </ul>
-        
-      </nav>      
+        </div>
+          <li><a href="perfil.html"> <div class="iconoPerfil"><img src="../imagenes/iconoPerfil2.png"> </div></a></li>
+  <li> <div class="ubicacion"> <input type="checkbox" id="toggle">
+    <label for="toggle" class="buttones"></label></div>
+    </li>
+            </ul>
+          
+        </nav>        
 
     </header>
     

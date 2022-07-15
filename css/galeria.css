@@ -45,65 +45,67 @@ body {
     transform: translateY(-50%);
   }
   
-  .store-body {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-  }
-  
-  .store-body .product-info {
-    width: 60%;
-    border-right: 1px solid rgba(0,0,0,.125); 
-  }
-  
-  .store-body .product-payment-details {
-    width: 40%;
-    padding: 15px 15px 0 15px;
+.store-body {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: flex-start;
+}
 
-  }
+.store-body .product-info {
+  width: 60%;
+  border-right: 1px solid rgba(0,0,0,.125); 
+}
 
-  .product-info .product-gallery {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid rgba(0,0,0,.125);
-  }
-  
-  .product-gallery-featured {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 15px 0;
-    cursor: zoom-in;
-  }
-  .shopping-cart-image{
-    width: 100%;
-    font-size: medium !important;
-  }
+.store-body .product-payment-details {
+  width: 40%;
+  padding: 15px 15px 0 15px;
 
-  .product-gallery-thumbnails .thumbnails-list li {
-    margin-bottom: 5px;
-    cursor: pointer;
-    position: relative;
-    width: 70px;
-    height: 70px;
-  }
-  
-  .thumbnails-list li img {
-    display: block;
-    width: 100%;
-  }
-  
-  .product-gallery-thumbnails .thumbnails-list li:hover::before {
-    content: "";
-    width: 3px;
-    height: 100%;
-    background: #007bff;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+}
+
+.product-info .product-gallery {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.product-gallery-featured {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px 0;
+  padding-top: 0%;
+}
+.shopping-cart-image{
+  width: 100%;
+  font-size: medium !important;
+}
+
+.product-gallery-thumbnails .thumbnails-list li {
+  margin-bottom: 5px;
+  cursor: pointer;
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.thumbnails-list li img {
+  display: block;
+  width: 100%;
+}
+
+.product-gallery-thumbnails .thumbnails-list li:hover::before {
+  content: "";
+  width: 3px;
+  height: 77%;
+  background: #007bff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
   
   .product-info .product-seller-recommended {
     padding: 20px 20px 0 20px;
@@ -713,8 +715,7 @@ color: var(--txt-color) !important;
     font-size: large;
     font-family: serif;
   }
-.inicio__sesion{background: var(--bg-color) !important;
-  color: var(--txt-color) !important;}
+
   @media only screen and (max-width: 700px) {
 
 .product-gallery-featured{width: 130%;}
@@ -735,7 +736,7 @@ flex-direction: column;
   font-size: large;
 }
 .seccionTiendaRiver{
-  width: 80%;
+  width: 100%;
   }
 .nav-link{font-size: medium !important;
 margin-left: 5px !important;}
@@ -767,4 +768,118 @@ margin-left: 0px !important;
 height: 100% !important;}
 
   }
+
+  
+@media (max-width: 1000px){
+  .store-body{
+   flex-direction: column;
+  }
+  .product-gallery-featured {
+   display: flex;
+   flex-direction: column;}
+   .imagen__galeria {
+     width: 300px;
+     height: 300px;
+     margin-left: 10px;
+ }
+ .store-body .product-info {
+   width: 105%;
+   border-right: 0px;
+ }
+ .container{
+  margin-right: 0% !important;
+  padding-right: 0%;
+ }
+.row{
+  margin-right:0% ;
+}
+.product-info{
+  display: flex;
+  flex-direction: column;
+}
+.product-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#galeria__descripcion{
+  margin-bottom: 0% !important;
+}
+.item-counter{
+  display: flex;
+  flex-direction: row;
+}
+.imagen-galeria{
+  width: 260px;
+  margin-left: 10px;
+}
+.descripcionTiendaOnline{
+  margin-left: 100px !important;
+  margin-top: 15px;
+}
+.card-img-top {
+  width: 500px;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.display-4 {
+display: flex;
+flex-direction: row;
+}
+.productoTitulo{
+  width: 300% !important;
+}
+.store-body .product-payment-details {
+  width: 100%;
+  padding: 15px 15px 0 15px;
+}
+.descripcionTiendaOnline{
+  margin-left: 0% !important; 
+  font-size: large;
+}
+.navbar{
+  display: flex;
+  flex-direction: row !important;
+display: flex-end;}
+  .iconoPerfil{
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  .buttones{
+    margin-left: 50%;
+    margin-top: 30px !important;
+  }
+  .columnas{
+    width: 100% !important;
+  
+  }
+  .modal-body{
+width: 100% !important;
+    
+    }
+    .modal-content{
+width: 190% !important;
+z-index: 100;
+
+        }
+        #navbarNavDropdownn{
+          width: 100% !important;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+        }
+        .imagen-registrar{
+          width:0px
+        }
+        .tiendaOnline{
+          display: flex;
+          flex-direction: row;
+          margin-left: 40% !important;
+          height: 50px;
+          width:200px;
+          justify-content: center;
+          }
+}
+ 
+   
   

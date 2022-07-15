@@ -2,6 +2,48 @@ body{
     background: url(../imagenes/f.jpg) no-repeat center center fixed;
     background-size: cover;
 }
+body {
+    background-color: #f5f5f5;
+    padding-top: 25px;
+
+  }
+  [data-tema='oscuro'] {
+    --bg-color: #3f3f3f;
+    --txt-color: #e9e5e5;
+  }
+  
+  .modal-content{
+
+    margin-left: 0% !important;
+    color: var(--txt-color) !important;
+        font-family: serif;
+      }
+      
+#navbarNavDropdown{
+    width: 50% !important;
+    justify-content: center !important;
+    background: var(--bg-color) !important;
+    color: var(--txt-color) !important;
+    font-family: serif;
+  }
+  #navbarNavDropdownn{
+    width: 25% !important;
+    justify-content: flex-start !important;
+    font-family: serif;
+  }
+  
+  .nav-link
+  {  color: var(--txt-color) !important;
+  font-size: larger;
+  font-family: serif;}
+  #navbarNavGaleria{
+    width: 100% !important;
+    justify-content: center !important;
+    background: var(--bg-color) !important;
+    color: var(--txt-color) !important;
+    font-family: serif;
+  }
+  
 
 .main-section{
     margin:0 auto;
@@ -35,6 +77,36 @@ body{
     border-radius: 5px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    background: var(--bg-color) !important;
+    color: var(--txt-color) !important;
+  }
+  .navbar{
+    background: var(--bg-color) ;
+    color: var(--txt-color);
+    padding:0% !important;
+  }
+  .totalCarrito{  background: var(--bg-color) !important;
+    color: var(--txt-color) !important;}
+  
+    
+    .modal-body{
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+      background: var(--bg-color) !important;
+      color: var(--txt-color) !important;
+    }
+    .modal-header{
+      background: var(--bg-color) !important;
+      color: var(--txt-color) !important;
+    }
+    .modal-footer{  background: var(--bg-color) !important;
+      color: var(--txt-color) !important;}
+
+
 .form-group::before{
     font-family: "Font Awesome\ 5 Free";
     position: absolute;
@@ -64,3 +136,7 @@ button{
     color: white;
 }
 
+@media only screen and (max-width: 900px) {
+    .modal-content{width: 10% !important;
+    background-color: white !important }
+}
