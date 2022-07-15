@@ -648,12 +648,12 @@ margin-bottom: 50px;
 }
 
 .card-1{
-	background-image: url("/imagenes/tarjetaFrente.jpg");
+	background-image: url("../imagenes/tarjetaFrente.jpg");
 	background-size: cover;
 }
 
 .card-2{
-	background-image: url("/imagenes/tarjetaAtras.jpg");
+	background-image: url("../imagenes/tarjetaAtras.jpg");
 	background-size: cover;
 }
 
